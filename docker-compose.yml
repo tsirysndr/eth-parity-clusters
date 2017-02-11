@@ -2,7 +2,7 @@
 version: '2'
 
 services:
-  parity-node-1:
+  parity-nodes:
     image: ubuntu/parity-client
     build:
       context: .
