@@ -1,0 +1,371 @@
+server {
+ listen <external-ip>:8540;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8540 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8540;
+ }
+}
+
+server {
+ listen <external-ip>:8541;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8540 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8541;
+ }
+}
+
+server {
+ listen <external-ip>:8542;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8540 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8542;
+ }
+}
+
+server {
+ listen <external-ip>:8080;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8080 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8080;
+ }
+}
+
+server {
+ listen <external-ip>:8180;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8180 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8180;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8081;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8081 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8081;
+ }
+}
+
+server {
+ listen <external-ip>:8181;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8181 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8181;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8082;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8082 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8082;
+ }
+}
+
+server {
+ listen <external-ip>:8182;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8182 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8182;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8083;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8083 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8083;
+ }
+}
+
+server {
+ listen <external-ip>:8183;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8183 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8183;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8084;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8084 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8084;
+ }
+}
+
+server {
+ listen <external-ip>:8184;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8184 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8184;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8085;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8085 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8085;
+ }
+}
+
+server {
+ listen <external-ip>:8185;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8185 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8185;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8080;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8080 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8080;
+ }
+}
+
+server {
+ listen <external-ip>:8186;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8186 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8186;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8087;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8087 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8080;
+ }
+}
+
+server {
+ listen <external-ip>:8187;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8180 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8187;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8088;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8080 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8088;
+ }
+}
+
+server {
+ listen <external-ip>:8188;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8188 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8188;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}
+
+server {
+ listen <external-ip>:8089;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8080 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8089;
+ }
+}
+
+server {
+ listen <external-ip>:8189;
+
+ # Uncomment for SSL Server
+ #listen <external-ip>:8189 ssl;
+ #ssl on;
+ #ssl_certificate /etc/nginx/parity.ui.crt;
+ #ssl_certificate_key /etc/nginx/parity.ui.key;
+
+ location / {
+   proxy_pass http://127.0.0.1:8189;
+
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection "upgrade";
+   proxy_read_timeout 86400;
+ }
+}

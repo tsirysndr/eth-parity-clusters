@@ -1,0 +1,17 @@
+[parity]
+chain = "proof-of-authority-spec.json"
+base_path = "/opt/poa-data/parity2"
+[network]
+port = 30302
+[rpc]
+port = 8542
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+[ui]
+port = 8182
+[dapps]
+port = 8082
+[account]
+password = ["node.pwds"]
+[mining]
+engine_signer = "0x00198dEEC930538D49676Bd0409dc58A6c1e9049"
+reseal_on_txs = "none"

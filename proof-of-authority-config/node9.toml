@@ -1,0 +1,12 @@
+[parity]
+chain = "proof-of-authority-spec.json"
+base_path = "/opt/poa-data/parity9"
+[network]
+port = 30309
+[rpc]
+port = 8549
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+[ui]
+port = 8189
+[dapps]
+port = 8089
